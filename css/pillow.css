@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #dedada;
+}
+.pillow-container{
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+}
+.pillow-wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start; 
+    transition: all .6s ease;
+}
+.pillow-slide{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: darkgrey;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px; 
+    cursor: grab;
+    user-select: none;
+}   
+.pillow-slide img{
+    max-width: 100%;
+    height: auto;
+}
+.arrow{
+    position: absolute;
+    z-index: 9;
+    top: 50%;
+    transform: translate(0, -50%);
+    cursor: pointer; 
+    font-size: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    user-select: none;
+    color: rgb(35, 35, 236);
+    font-weight: bold;
+    line-height: 60px;
+    text-align: center;
+}
+.pillow-prev{ 
+    left: 30px;
+}
+.pillow-next{ 
+    right: 30px; 
+}
